@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+/* -------------------------------------------------- */
+/* -- General styles */
+
+* {
+    --light: #e3f2fd;
+    --lightest: #fafafa;
+    --granny-smith: #8AA29E;
+    --dark: #686963;
+    --accent: #800020;
+    --accent-over-dark: #D2AA67;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+a:hover {
+    filter: brightness(1.25) !important;
+    cursor: pointer;
+}
+
+a:active {
+    filter: brightness(1) !important;
+}
+
+.aOverDark {
+    color: var(--accent-over-dark) !important;
+}
+
+.aOverLight {
+    color: var(--accent) !important;
+}
+
+body {
+    background-color: var(--lightest) !important;
+    height: 100vh;
+}
+
+.caveatFont {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.btnDark {
+    background-color: var(--dark) !important;
+    border: 2px solid var(--accent) !important;
+    color: var(--lightest) !important;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+.btnDark:hover {
+    filter: brightness(1.25) !important;
+}
+
+.btnDark:active {
+    filter: brightness(1) !important;
+}
+
+/* -------------------------------------------------- */
+/* -- Header styles */
+
+header {
+    background-color: var(--dark);
+    padding: 0.5rem;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+header>.appName {
+    font-size: 3rem;
+    color: var(--lightest);
+    text-shadow: 4px 3px 0 var(--granny-smith);
+}
+
+header>.appMotto {
+    font-size: 1rem;
+    color: var(--accent-over-dark);
+}
+
+/* -------------------------------------------------- */
+/* -- Footer styles */
+
+footer {
+    background-color: var(--dark);
+    color: var(--lightest);
+    font-size: 1rem;
+    padding: 0.5rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#mainContent {
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
