@@ -25,5 +25,5 @@
     <!-- --- Own styles, scripts, and others -->
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="notemate.ico">
-    <!-- Icon created by Pixel perfect @ https://www.flaticon.com/free-icons/note -->
+    <!-- Icon created by Pixel Perfect @ https://www.flaticon.com/free-icons/note -->
 </head>

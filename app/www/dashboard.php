@@ -1,6 +1,6 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <?php include $_SERVER['DOCUMENT_ROOT'] . "/common/head.php"; ?>
 
 <head>
@@ -16,7 +16,9 @@
 <body>
     <div id="mainContent">
         <div class="container">
-            <h1>Dashboard</h1>
+            <?php
+            echo "<h1>Welcome, " . $_SESSION["username"] . "!</h1>";
+            ?>
         </div>
     </div>
 </body>
