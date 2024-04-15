@@ -6,7 +6,6 @@
 
 <script>
     function resizeMainContent() {
-        const mainContentSpacing = 20;
         let headerHeight = document.getElementById("header").offsetHeight;
         let footerHeight = document.getElementById("footer").offsetHeight;
         let mainContent = document.getElementById("mainContent");

@@ -49,7 +49,7 @@ function createUser(string $username, string $password): UserStatus
 
 function authenticateUser(string $username, string $password): UserStatus
 {
-    if (userExists($username) == UserStatus::USER_EXISTS) {
+    if (userExists($username) === UserStatus::USER_EXISTS) {
         $requestUrl = USERS_PATH . "auth-with-password";
         $requestBody = [
             "identity" => $username,
@@ -73,7 +73,7 @@ function authenticateUser(string $username, string $password): UserStatus
         return UserStatus::USER_AUTHENTICATED;
     } else {
         $status = createUser($username, $password);
-        if ($status == UserStatus::USER_CREATED) {
+        if ($status === UserStatus::USER_CREATED) {
             return authenticateUser($username, $password);
         } else {
             return UserStatus::USER_CREATION_FAILED;
@@ -92,6 +92,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             header("HX-Redirect: dashboard.php");
             http_response_code(200);
         }
+        exit();
+    } else if (isset($_POST['logoutForm'])) {
+        session_destroy();
+        header("HX-Redirect: index.php");
+        http_response_code(200);
         exit();
     }
     http_response_code(405);

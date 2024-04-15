@@ -19,7 +19,14 @@
 
     <!-- ------------------------------------ -->
     <!-- --- HTMX -->
-    <script src="https://unpkg.com/htmx.org@1.9.11"></script>
+    <script src="https://unpkg.com/htmx.org"></script>
+    <script src="https://unpkg.com/htmx.org@1.9.11/dist/ext/client-side-templates.js"></script>
+    <script src="https://unpkg.com/mustache@latest"></script>
+
+    <!-- ------------------------------------ -->
+    <!-- --- Markdown inputs by Maxim Maeder @ https://maximmaeder.com/ -->
+    <script defer src="markdown-parser/markdown-parser.js"></script>
+    <link rel="stylesheet" href="markdown-parser/markdown-parser.css">
 
     <!-- ------------------------------------ -->
     <!-- --- Own styles, scripts, and others -->

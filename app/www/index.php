@@ -7,16 +7,7 @@
     <title>Welcome! | NoteMate</title>
 </head>
 
-<?php include $_SERVER['DOCUMENT_ROOT'] . "/common/header.php"; ?>
-
 <style>
-    .homeContainer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-    }
-
     .loginContainer {
         background-color: var(--light);
         padding: 1rem;
@@ -33,8 +24,9 @@
 </style>
 
 <body>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . "/common/header.php"; ?>
     <div id="mainContent">
-        <div class="container homeContainer">
+        <div class="container d-flex align-items-center justify-content-center mt-4">
             <div class="loginContainer rounded">
                 <h1 class="caveatFont">Welcome!</h1>
                 <p class="caveatFont instructions">
@@ -59,8 +51,7 @@
             </div>
         </div>
     </div>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . "/common/footer.php"; ?>
 </body>
-
-<?php include $_SERVER['DOCUMENT_ROOT'] . "/common/footer.php"; ?>
 
 </html>
